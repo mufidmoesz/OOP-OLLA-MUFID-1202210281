@@ -10,7 +10,7 @@ public class User {
         String nama = myObj.nextLine();
         System.out.print("Masukkan no. Handphone: ");
         String noHp = myObj.nextLine();
-        myObj.close();
+        // myObj.close();
 
         System.out.println("Registrasi berhasil");
         System.out.println("Nama : " + nama);

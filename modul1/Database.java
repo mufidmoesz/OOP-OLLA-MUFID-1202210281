@@ -7,38 +7,26 @@ public class Database {
 
 
     ArrayList<String> list = new ArrayList<String>();
-    public ArrayList<String> insertMenu() {
-
-        Scanner input = new Scanner(System.in);
-        System.out.print("Masukkan nama menu: ");
-        String menu = input.nextLine();
-        System.out.print("Masukkan harga menu: ");
-        String harga = input.nextLine();
-        System.out.print("Masukkan kategori: ");
-        String kategori = input.nextLine();
-
-        input.close();
-
-        list.add(menu);
-        list.add(harga);
-        list.add(kategori);
-
-        System.out.println("Menu berhasil ditambahkan");
-
+    public ArrayList<String> Menu() {
+        list.add("Bakso (Makanan) Rp. 10000");
+        list.add("Es Teh (Minuman) Rp. 5000");
+        list.add("Nasi Padang (Makanan) Rp. 15000");
         return list;
     }
 
-    public void showMenu() {
+    public String showMenu() {
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
+
         }
+        return null;
     }
 
     public void searchMenu() {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan nama menu: ");
         String menu = input.nextLine();
-        input.close();
+        // input.close();
 
         if (menu.equals(list.get(0))) {
             System.out.println("Menu: " + list.get(0));

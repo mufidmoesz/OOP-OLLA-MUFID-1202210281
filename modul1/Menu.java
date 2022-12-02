@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Menu {
     
-    public static void main(String[] args) {
+    public void menu() {
         Database db = new Database();
-        ArrayList<String> list = db.insertMenu();
+        ArrayList<String> list = db.Menu();
         db.showMenu();
         db.searchMenu();
     }
